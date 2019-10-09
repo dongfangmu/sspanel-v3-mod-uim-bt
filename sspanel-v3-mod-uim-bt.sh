@@ -66,22 +66,22 @@ echo -e "${Info} 检测安装git、unzip、crontab工具已完成"
 sleep 1
 ##下载解压拷贝源码
 echo -e "${Info} 正在下载解压处理程序源码"
-wget -N --no-check-certificate "https://github.com/dongfangmu/ss-panel-v3-mod_Uim/archive/master.zip"
-unzip master.zip
-cd ss-panel-v3-mod_Uim-master
+wget -N --no-check-certificate "https://github.com/dongfangmu/ss-panel-v3-mod_Uim/archive/dev.zip"
+unzip dev.zip
+cd ss-panel-v3-mod_Uim-dev
 mv * .[^.]* /www/wwwroot/$website/
 cd ..
-rm -rf dev.zip ss-panel-v3-mod_Uim-master/
+rm -rf dev.zip ss-panel-v3-mod_Uim-dev/
 echo -e "${Info} 下载解压处理程序源码已完成"
 sleep 1
 ##处理php函数
 echo -e "${Info} 正在处理宝塔php内容"
-sed -i 's/system,//g' /www/server/php/71/etc/php.ini
-sed -i 's/proc_open,//g' /www/server/php/71/etc/php.ini
-sed -i 's/proc_get_status,//g' /www/server/php/71/etc/php.ini
-sed -i 's/putenv,//g' /www/server/php/71/etc/php.ini
-sed -i 's/dynamic/static/g' /www/server/php/71/etc/php-fpm.conf
-sed -i 's/display_errors = On/display_errors = Off/g' /www/server/php/71/etc/php.ini
+sed -i 's/system,//g' /www/server/php/72/etc/php.ini
+sed -i 's/proc_open,//g' /www/server/php/72/etc/php.ini
+sed -i 's/proc_get_status,//g' /www/server/php/72/etc/php.ini
+sed -i 's/putenv,//g' /www/server/php/72/etc/php.ini
+sed -i 's/dynamic/static/g' /www/server/php/72/etc/php-fpm.conf
+sed -i 's/display_errors = On/display_errors = Off/g' /www/server/php/72/etc/php.ini
 echo -e "${Info} 处理宝塔php内容已完成"
 sleep 1
 ##导入数据库
