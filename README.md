@@ -40,11 +40,12 @@ ps:本脚本并未在所有机器都测试过，处于新生脚本，</br>
 
 对接节点
 我们连接到节点的vps，复制下方代码，运行
-
+```
 yum -y install wget &&
 wget -N --no-check-certificate https://raw.githubusercontent.com/lizhongnian/ss-panel-v3-mod-node-connect/master/ss-panel-v3-mod-node-connect.sh && 
 chmod +x ss-panel-v3-mod-node-connect.sh && 
 bash ss-panel-v3-mod-node-connect.sh
+```
 
 对接输入1
 
