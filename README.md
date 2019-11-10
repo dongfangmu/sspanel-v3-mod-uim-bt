@@ -36,4 +36,21 @@ bash sspanel-v3-mod-uim-bt.sh
 
 ps:本脚本并未在所有机器都测试过，处于新生脚本，</br>
 希望大家可以多提提意见，大家有问题可以及时返回给我</br>
-联系方式：<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=0e0ad00fa39b8d74f9aee8aba6d4fa87387d41ae60a8f617e437a9ae5c4cea32">七彩blog交流群</a>
+联系方式：<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=0e0ad00fa39b8d74f9aee8aba6d4fa87387d41ae60a8f617e437a9ae5c4cea32">七彩blog交流群</a
+
+对接节点
+我们连接到节点的vps，复制下方代码，运行
+
+yum -y install wget &&
+wget -N --no-check-certificate https://raw.githubusercontent.com/lizhongnian/ss-panel-v3-mod-node-connect/master/ss-panel-v3-mod-node-connect.sh && 
+chmod +x ss-panel-v3-mod-node-connect.sh && 
+bash ss-panel-v3-mod-node-connect.sh
+
+对接输入1
+
+出现如下提示，需要顺序填写网址为http://nide
+
+第二个为前端配置文件中的mukey
+
+第三个为你节点的id
+
